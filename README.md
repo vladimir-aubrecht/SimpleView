@@ -7,4 +7,4 @@ Application's UI is literally just view on picture. Appliction allows you to swi
 
 ![Screenshot][Screenshot]
 
-[Screenshot]: docs/Screenshot.png
+[Screenshot]: docs/screenshot.png
