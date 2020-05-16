@@ -25,14 +25,13 @@ jobs:
     - name: Xcodebuild Action
       uses: sersoft-gmbh/xcodebuild-action@v1.1
       with:
-        # The path to the xcworkspace to build. Mutually exclusive with `project`.
-        project: src/SimpleView.xcodeproj
-        # The action to perform (e.g. build, test, ...).
+        workspace: src/SimpleView.xcodeproj/project.xcworkspace
+        scheme: SimpleView
         action: build
     - name: List files
       run: ls -R *
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder $(Build.SourcesDirectory)/output/build.sym/release/SimpleView.app -ov -format UDZO SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder src/build/Release/SimpleView.app -ov -format UDZO SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
