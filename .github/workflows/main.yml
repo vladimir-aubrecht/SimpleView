@@ -26,6 +26,6 @@ jobs:
       uses: sersoft-gmbh/xcodebuild-action@v1.1
       with:
         # The path to the xcworkspace to build. Mutually exclusive with `project`.
-        project: SimpleView
+        project: src/SimpleView.xcodeproj
         # The action to perform (e.g. build, test, ...).
         action: build
