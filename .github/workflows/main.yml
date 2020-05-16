@@ -21,16 +21,18 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
     - name: XCode build
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
-      env:
-        CONFIGURATION_BUILD_DIR: $WORKSPACE/../Build
-    - name: List files
-      run: ls -R *
+    
+    - name: Copy to Build folder
+      run: cp /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app SimpleView.app
+    
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder Build/Products/Release/SimpleView.app -ov -format UDZO Build/Products/Release/SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder SimpleView.app -ov -format UDZO SimpleView.dmg
+
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: SimpleView
-        path: Build/Products/Release/SimpleView.dmg
+        path: SimpleView.dmg
