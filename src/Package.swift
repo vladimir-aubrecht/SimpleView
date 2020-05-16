@@ -16,7 +16,7 @@ let package = Package(
         ],
     dependencies: [
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.5.1"),
-        .package(url: "https://github.com/seanparsons/SwiftTryCatch.git", .revision("e7074a72e4d4dc516f391bc4d4afd8ca6a845b4b"))
+        .package(url: "https://github.com/seanparsons/SwiftTryCatch.git", .revision("6a177252cfa2ef649b0aa7b2d16ab221386ca51c"))
     ],
     targets: [
         .target(
