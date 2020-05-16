@@ -25,14 +25,13 @@ jobs:
     - name: Xcodebuild Action
       uses: sersoft-gmbh/xcodebuild-action@v1.1
       with:
-        workspace: src/SimpleView.xcodeproj/project.xcworkspace
-        scheme: SimpleView
+        project: src/SimpleView.xcodeproj
         action: build
         destination: platform=macOS
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.app -ov -format UDZO /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder src/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.app -ov -format UDZO src/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: SimpleView
-        path: /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
+        path: src/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
