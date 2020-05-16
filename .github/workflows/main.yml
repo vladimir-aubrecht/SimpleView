@@ -32,6 +32,8 @@ jobs:
         destination: platform=macOS
     - name: List files
       run: ls -R *
+    - name: XCode build
+      run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
     - name: Create DMG
       run: hdiutil create -volname SimpleView -srcfolder Build/Products/Release/SimpleView.app -ov -format UDZO Build/Products/Release/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
