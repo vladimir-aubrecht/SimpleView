@@ -26,7 +26,7 @@ jobs:
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
     
     - name: Copy Product
-      run: cp -ar /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app SimpleView.app
+      run: cp -a /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app SimpleView.app
     
     - name: Create DMG
       run: hdiutil create -volname SimpleView -srcfolder SimpleView.app -ov -format UDZO SimpleView.dmg
