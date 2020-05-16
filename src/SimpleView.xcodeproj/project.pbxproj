@@ -59,6 +59,8 @@
 		F404B5EC20575A8300220024 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		F404B5EE2058748D00220024 /* ApplicationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
 		F404B5F22058B80C00220024 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F47ECA072470ACB6008FD5FA /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47ECA082470ACC0008FD5FA /* SwiftTryCatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftTryCatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4A016205B40CD00229818 /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
 		OBJ_10 /* CenteredClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredClipView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* CIImage+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Conversions.swift"; sourceTree = "<group>"; };
@@ -72,8 +74,6 @@
 		OBJ_20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		OBJ_21 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		"SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftTryCatch.framework; path = /Users/vladimiraubrecht/Projects/GitHub/SimpleView/src/build/Debug/SwiftTryCatch.framework; sourceTree = "<absolute>"; };
-		"SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyBeaver.framework; path = /Users/vladimiraubrecht/Projects/GitHub/SimpleView/src/build/Debug/SwiftyBeaver.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +130,8 @@
 				F404B5E52055FF0B00220024 /* SimpleView.entitlements */,
 				OBJ_7 /* Sources */,
 				F47ECA0224706763008FD5FA /* Frameworks */,
+				F47ECA072470ACB6008FD5FA /* SwiftyBeaver.framework */,
+				F47ECA082470ACC0008FD5FA /* SwiftTryCatch.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +202,7 @@
 			);
 			name = SwiftTryCatch;
 			productName = SwiftTryCatch;
-			productReference = "SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */;
+			productReference = F47ECA082470ACC0008FD5FA /* SwiftTryCatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"SwiftyBeaver::SwiftyBeaver" /* SwiftyBeaver */ = {
@@ -216,7 +218,7 @@
 			);
 			name = SwiftyBeaver;
 			productName = SwiftyBeaver;
-			productReference = "SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */;
+			productReference = F47ECA072470ACB6008FD5FA /* SwiftyBeaver.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -579,7 +581,7 @@
 		OBJ_91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "-";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 8PWAMAXL84;
 				ENABLE_TESTABILITY = YES;
@@ -629,7 +631,7 @@
 		OBJ_97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = 8PWAMAXL84;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
