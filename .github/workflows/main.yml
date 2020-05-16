@@ -31,9 +31,9 @@ jobs:
     - name: List files
       run: ls -R *
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder src/build/Release/SimpleView.app -ov -format UDZO SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder src/Build/SimpleView/Build/Products/Debug/SimpleView.app -ov -format UDZO src/Build/SimpleView/Build/Products/Debug/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: SimpleView
-        path: SimpleView.dmg
+        path: src/Build/SimpleView/Build/Products/Debug/SimpleView.dmg
