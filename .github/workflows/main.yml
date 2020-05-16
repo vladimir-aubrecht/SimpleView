@@ -21,19 +21,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
-    - name: Xcodebuild Action
-      uses: sersoft-gmbh/xcodebuild-action@v1.1
-      with:
-        project: src/SimpleView.xcodeproj
-        scheme: SimpleView
-        action: build
-        configuration: Release
-        destination: platform=macOS
-    - name: List files
-      run: ls -R *
     - name: XCode build
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
+    - name: List files
+      run: ls -R *
     - name: Create DMG
       run: hdiutil create -volname SimpleView -srcfolder Build/Products/Release/SimpleView.app -ov -format UDZO Build/Products/Release/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
