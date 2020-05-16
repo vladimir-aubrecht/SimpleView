@@ -27,7 +27,7 @@ jobs:
       with:
         project: src/SimpleView.xcodeproj
         scheme: SimpleView
-        action: clean build
+        action: build
         configuration: Release
         destination: platform=macOS
     - name: List files
