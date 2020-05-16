@@ -35,3 +35,5 @@ jobs:
       with:
         name: SimpleView
         path: Build/Products/Debug/SimpleView.dmg
+    - name: List files
+      run: ls -R *
