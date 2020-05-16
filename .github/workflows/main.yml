@@ -26,6 +26,7 @@ jobs:
       uses: sersoft-gmbh/xcodebuild-action@v1.1
       with:
         project: src/SimpleView.xcodeproj
+        scheme: SimpleView
         action: build
         destination: platform=macOS
     - name: Create DMG
