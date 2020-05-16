@@ -28,8 +28,11 @@ jobs:
         workspace: src/SimpleView.xcodeproj/project.xcworkspace
         scheme: SimpleView
         action: build
+        destination: platform=macOS
     - name: List files
       run: ls -R *
+    - name: List derived data
+      run: ls -R /Users/runner/Library/Developer/Xcode/DerivedData/*
     - name: Create DMG
       run: hdiutil create -volname SimpleView -srcfolder src/Build/SimpleView/Build/Products/Debug/SimpleView.app -ov -format UDZO src/Build/SimpleView/Build/Products/Debug/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
