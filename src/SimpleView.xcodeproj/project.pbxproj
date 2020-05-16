@@ -3,14 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F404B5CC2055FE4F00220024 /* SwiftTryCatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */; };
-		F404B5CD2055FE4F00220024 /* SwiftTryCatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F404B5D02055FE4F00220024 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */; };
-		F404B5D12055FE4F00220024 /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F404B5D52055FE6D00220024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AppDelegate.swift */; };
 		F404B5D62055FE6D00220024 /* CenteredClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CenteredClipView.swift */; };
 		F404B5D72055FE7200220024 /* CIImage+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CIImage+Conversions.swift */; };
@@ -27,29 +23,13 @@
 		F404B5ED20575A8300220024 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404B5EC20575A8300220024 /* SettingsController.swift */; };
 		F404B5EF2058748D00220024 /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404B5EE2058748D00220024 /* ApplicationSettings.swift */; };
 		F404B5F32058B80C00220024 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F404B5F22058B80C00220024 /* Media.xcassets */; };
+		F47ECA0424706763008FD5FA /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = F47ECA0324706763008FD5FA /* SwiftyBeaver */; };
+		F47ECA0624706763008FD5FA /* SwiftTryCatch in Frameworks */ = {isa = PBXBuildFile; productRef = F47ECA0524706763008FD5FA /* SwiftTryCatch */; };
 		F4F4A017205B40CD00229818 /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4A016205B40CD00229818 /* CGSize+Operators.swift */; };
-		OBJ_100 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Base64.swift */; };
-		OBJ_101 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* BaseDestination.swift */; };
-		OBJ_102 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ConsoleDestination.swift */; };
-		OBJ_103 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Extensions.swift */; };
-		OBJ_104 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* FileDestination.swift */; };
-		OBJ_105 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Filter.swift */; };
-		OBJ_106 /* GoogleCloudDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* GoogleCloudDestination.swift */; };
-		OBJ_107 /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* SBPlatformDestination.swift */; };
-		OBJ_108 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* SwiftyBeaver.swift */; };
-		OBJ_93 /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* SwiftTryCatch.m */; };
-		OBJ_99 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* AES256CBC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F404B5CE2055FE4F00220024 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SwiftTryCatch::SwiftTryCatch";
-			remoteInfo = SwiftTryCatch;
-		};
-		F404B5D22055FE4F00220024 /* PBXContainerItemProxy */ = {
+		F47EC9FF247066D3008FD5FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -59,14 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F404B5D42055FE5000220024 /* Embed Frameworks */ = {
+		F47ECA01247066D3008FD5FA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F404B5CD2055FE4F00220024 /* SwiftTryCatch.framework in Embed Frameworks */,
-				F404B5D12055FE4F00220024 /* SwiftyBeaver.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F404B5BC2055FDD400220024 /* SimpleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F404B5BC2055FDD400220024 /* SimpleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SimpleView.app; path = /Users/vladimiraubrecht/Projects/GitHub/SimpleView/src/build/Debug/SimpleView.app; sourceTree = "<absolute>"; };
 		F404B5E12055FE7E00220024 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F404B5E52055FF0B00220024 /* SimpleView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleView.entitlements; sourceTree = "<group>"; };
 		F404B5E6205604C000220024 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -93,25 +71,9 @@
 		OBJ_19 /* ImageFileBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileBrowser.swift; sourceTree = "<group>"; };
 		OBJ_20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		OBJ_21 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/.build/checkouts/SwiftTryCatch/Package.swift"; sourceTree = "<group>"; };
-		OBJ_27 /* SwiftTryCatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftTryCatch.m; sourceTree = "<group>"; };
-		OBJ_29 /* SwiftTryCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftTryCatch.h; sourceTree = "<group>"; };
-		OBJ_30 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/SimpleView.xcodeproj/GeneratedModuleMap/SwiftTryCatch/module.modulemap"; sourceTree = "<group>"; };
-		OBJ_32 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/.build/checkouts/SwiftyBeaver/Package.swift"; sourceTree = "<group>"; };
-		OBJ_33 /* AES256CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBC.swift; sourceTree = "<group>"; };
-		OBJ_34 /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
-		OBJ_35 /* BaseDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDestination.swift; sourceTree = "<group>"; };
-		OBJ_36 /* ConsoleDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleDestination.swift; sourceTree = "<group>"; };
-		OBJ_37 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		OBJ_38 /* FileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDestination.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
-		OBJ_40 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudDestination.swift; sourceTree = "<group>"; };
-		OBJ_41 /* SBPlatformDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBPlatformDestination.swift; sourceTree = "<group>"; };
-		OBJ_42 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaver.swift; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		"SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftTryCatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftTryCatch.framework; path = /Users/vladimiraubrecht/Projects/GitHub/SimpleView/src/build/Debug/SwiftTryCatch.framework; sourceTree = "<absolute>"; };
+		"SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyBeaver.framework; path = /Users/vladimiraubrecht/Projects/GitHub/SimpleView/src/build/Debug/SwiftyBeaver.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F404B5CC2055FE4F00220024 /* SwiftTryCatch.framework in Frameworks */,
-				F404B5D02055FE4F00220024 /* SwiftyBeaver.framework in Frameworks */,
+				F47ECA0624706763008FD5FA /* SwiftTryCatch in Frameworks */,
+				F47ECA0424706763008FD5FA /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +103,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F47ECA0224706763008FD5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,80 +124,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		OBJ_22 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_24 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_25 /* SwiftTryCatch */,
-				OBJ_31 /* SwiftyBeaver 1.5.1 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_25 /* SwiftTryCatch */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_26 /* Package.swift */,
-				OBJ_27 /* SwiftTryCatch.m */,
-				OBJ_28 /* include */,
-			);
-			name = SwiftTryCatch;
-			path = ".build/checkouts/SwiftTryCatch/Sources";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_28 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_29 /* SwiftTryCatch.h */,
-				OBJ_30 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		OBJ_31 /* SwiftyBeaver 1.5.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_32 /* Package.swift */,
-				OBJ_33 /* AES256CBC.swift */,
-				OBJ_34 /* Base64.swift */,
-				OBJ_35 /* BaseDestination.swift */,
-				OBJ_36 /* ConsoleDestination.swift */,
-				OBJ_37 /* Extensions.swift */,
-				OBJ_38 /* FileDestination.swift */,
-				OBJ_39 /* Filter.swift */,
-				OBJ_40 /* GoogleCloudDestination.swift */,
-				OBJ_41 /* SBPlatformDestination.swift */,
-				OBJ_42 /* SwiftyBeaver.swift */,
-			);
-			name = "SwiftyBeaver 1.5.1";
-			path = ".build/checkouts/SwiftyBeaver/Sources";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"SwiftTryCatch::SwiftTryCatch::Product" /* SwiftTryCatch.framework */,
-				"SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */,
-				F404B5BC2055FDD400220024 /* SimpleView.app */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				F404B5E52055FF0B00220024 /* SimpleView.entitlements */,
-				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_22 /* Tests */,
-				OBJ_24 /* Dependencies */,
-				OBJ_43 /* Products */,
+				F47ECA0224706763008FD5FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,15 +171,18 @@
 				F404B5B82055FDD400220024 /* Sources */,
 				F404B5B92055FDD400220024 /* Frameworks */,
 				F404B5BA2055FDD400220024 /* Resources */,
-				F404B5D42055FE5000220024 /* Embed Frameworks */,
+				F47ECA01247066D3008FD5FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F404B5CF2055FE4F00220024 /* PBXTargetDependency */,
-				F404B5D32055FE4F00220024 /* PBXTargetDependency */,
+				F47ECA00247066D3008FD5FA /* PBXTargetDependency */,
 			);
 			name = SimpleView;
+			packageProductDependencies = (
+				F47ECA0324706763008FD5FA /* SwiftyBeaver */,
+				F47ECA0524706763008FD5FA /* SwiftTryCatch */,
+			);
 			productName = SimpleView;
 			productReference = F404B5BC2055FDD400220024 /* SimpleView.app */;
 			productType = "com.apple.product-type.application";
@@ -352,7 +256,11 @@
 				Base,
 			);
 			mainGroup = OBJ_5;
-			productRefGroup = OBJ_43 /* Products */;
+			packageReferences = (
+				F47EC9F624706484008FD5FA /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				F47EC9F9247064B9008FD5FA /* XCRemoteSwiftPackageReference "SwiftTryCatch" */,
+			);
+			productRefGroup = OBJ_5;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -402,7 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_93 /* SwiftTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,31 +317,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_99 /* AES256CBC.swift in Sources */,
-				OBJ_100 /* Base64.swift in Sources */,
-				OBJ_101 /* BaseDestination.swift in Sources */,
-				OBJ_102 /* ConsoleDestination.swift in Sources */,
-				OBJ_103 /* Extensions.swift in Sources */,
-				OBJ_104 /* FileDestination.swift in Sources */,
-				OBJ_105 /* Filter.swift in Sources */,
-				OBJ_106 /* GoogleCloudDestination.swift in Sources */,
-				OBJ_107 /* SBPlatformDestination.swift in Sources */,
-				OBJ_108 /* SwiftyBeaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F404B5CF2055FE4F00220024 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftTryCatch::SwiftTryCatch" /* SwiftTryCatch */;
-			targetProxy = F404B5CE2055FE4F00220024 /* PBXContainerItemProxy */;
-		};
-		F404B5D32055FE4F00220024 /* PBXTargetDependency */ = {
+		F47ECA00247066D3008FD5FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyBeaver::SwiftyBeaver" /* SwiftyBeaver */;
-			targetProxy = F404B5D22055FE4F00220024 /* PBXContainerItemProxy */;
+			targetProxy = F47EC9FF247066D3008FD5FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -442,7 +334,6 @@
 		F404B5CA2055FDD400220024 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -473,10 +364,9 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8PWAMAXL84;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -492,7 +382,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/.build/**";
 				INFOPLIST_FILE = Sources/SimpleView/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ASoft.SimpleView;
@@ -506,7 +399,6 @@
 		F404B5CB2055FDD400220024 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -538,10 +430,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8PWAMAXL84;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -552,7 +443,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/.build/**";
 				INFOPLIST_FILE = Sources/SimpleView/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ASoft.SimpleView;
@@ -650,7 +544,8 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -660,7 +555,6 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,7 +562,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/SwiftTryCatch/Sources/include",
+					"$(SRCROOT)/.build/checkouts/SwiftTryCatch.git-1415355644480913846/Sources/include",
 				);
 				INFOPLIST_FILE = SimpleView.xcodeproj/SwiftTryCatch_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -687,7 +581,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8PWAMAXL84;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -695,7 +589,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/SwiftTryCatch/Sources/include",
+					"$(SRCROOT)/.build/checkouts/SwiftTryCatch.git-1415355644480913846/Sources/include",
 				);
 				INFOPLIST_FILE = SimpleView.xcodeproj/SwiftTryCatch_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -796,6 +690,38 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F47EC9F624706484008FD5FA /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+		F47EC9F9247064B9008FD5FA /* XCRemoteSwiftPackageReference "SwiftTryCatch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/seanparsons/SwiftTryCatch.git";
+			requirement = {
+				kind = revision;
+				revision = 6a177252cfa2ef649b0aa7b2d16ab221386ca51c;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F47ECA0324706763008FD5FA /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F47EC9F624706484008FD5FA /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		F47ECA0524706763008FD5FA /* SwiftTryCatch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F47EC9F9247064B9008FD5FA /* XCRemoteSwiftPackageReference "SwiftTryCatch" */;
+			productName = SwiftTryCatch;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }
