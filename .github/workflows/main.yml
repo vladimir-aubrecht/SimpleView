@@ -29,9 +29,9 @@ jobs:
         action: build
         destination: platform=macOS
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder src/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.app -ov -format UDZO src/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder Build/Products/Debug/SimpleView.app -ov -format UDZO Build/Products/Debug/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: SimpleView
-        path: src/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
+        path: Build/Products/Debug/SimpleView.dmg
