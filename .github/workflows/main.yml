@@ -34,9 +34,9 @@ jobs:
     - name: List derived data
       run: ls -R /Users/runner/Library/Developer/Xcode/DerivedData/*
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder src/Build/SimpleView/Build/Products/Debug/SimpleView.app -ov -format UDZO src/Build/SimpleView/Build/Products/Debug/SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.app -ov -format UDZO /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: SimpleView
-        path: src/Build/SimpleView/Build/Products/Debug/SimpleView.dmg
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-gbmkwzvvyodwueerjwrmlqyfruwe/Build/Products/Debug/SimpleView.dmg
