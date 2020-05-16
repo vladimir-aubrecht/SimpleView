@@ -29,6 +29,8 @@ jobs:
         scheme: SimpleView
         action: build
         destination: platform=macOS
+    - name: List files
+      run: ls -R *
     - name: Create DMG
       run: hdiutil create -volname SimpleView -srcfolder Build/Products/Debug/SimpleView.app -ov -format UDZO Build/Products/Debug/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
@@ -36,5 +38,3 @@ jobs:
       with:
         name: SimpleView
         path: Build/Products/Debug/SimpleView.dmg
-    - name: List files
-      run: ls -R *
