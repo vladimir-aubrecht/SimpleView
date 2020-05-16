@@ -93,11 +93,11 @@
 		OBJ_19 /* ImageFileBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileBrowser.swift; sourceTree = "<group>"; };
 		OBJ_20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		OBJ_21 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/.build/checkouts/SwiftTryCatch.git-1415355644480913846/Package.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/.build/checkouts/SwiftTryCatch/Package.swift"; sourceTree = "<group>"; };
 		OBJ_27 /* SwiftTryCatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftTryCatch.m; sourceTree = "<group>"; };
 		OBJ_29 /* SwiftTryCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftTryCatch.h; sourceTree = "<group>"; };
 		OBJ_30 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/SimpleView.xcodeproj/GeneratedModuleMap/SwiftTryCatch/module.modulemap"; sourceTree = "<group>"; };
-		OBJ_32 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/.build/checkouts/SwiftyBeaver.git--1637639271898239920/Package.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/vladimiraubrecht/Library/Mobile Documents/com~apple~CloudDocs/Projects/Current Projects/SimpleView/.build/checkouts/SwiftyBeaver/Package.swift"; sourceTree = "<group>"; };
 		OBJ_33 /* AES256CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBC.swift; sourceTree = "<group>"; };
 		OBJ_34 /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
 		OBJ_35 /* BaseDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDestination.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				OBJ_28 /* include */,
 			);
 			name = SwiftTryCatch;
-			path = ".build/checkouts/SwiftTryCatch.git-1415355644480913846/Sources";
+			path = ".build/checkouts/SwiftTryCatch/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_28 /* include */ = {
@@ -207,7 +207,7 @@
 				OBJ_42 /* SwiftyBeaver.swift */,
 			);
 			name = "SwiftyBeaver 1.5.1";
-			path = ".build/checkouts/SwiftyBeaver.git--1637639271898239920/Sources";
+			path = ".build/checkouts/SwiftyBeaver/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_43 /* Products */ = {
@@ -347,6 +347,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -472,7 +473,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8PWAMAXL84;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -537,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 8PWAMAXL84;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -659,6 +660,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +668,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/SwiftTryCatch.git-1415355644480913846/Sources/include",
+					"$(SRCROOT)/.build/checkouts/SwiftTryCatch/Sources/include",
 				);
 				INFOPLIST_FILE = SimpleView.xcodeproj/SwiftTryCatch_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -685,7 +687,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 8PWAMAXL84;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -693,7 +695,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/SwiftTryCatch.git-1415355644480913846/Sources/include",
+					"$(SRCROOT)/.build/checkouts/SwiftTryCatch/Sources/include",
 				);
 				INFOPLIST_FILE = SimpleView.xcodeproj/SwiftTryCatch_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";

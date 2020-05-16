@@ -15,7 +15,7 @@ let package = Package(
         .executable(name: "SimpleView", targets: ["SimpleView"])
         ],
     dependencies: [
-        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.5.1"),
+        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", .upToNextMajor(from: "1.9.0")),
         .package(url: "https://github.com/seanparsons/SwiftTryCatch.git", .revision("6a177252cfa2ef649b0aa7b2d16ab221386ca51c"))
     ],
     targets: [
