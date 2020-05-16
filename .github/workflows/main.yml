@@ -29,3 +29,12 @@ jobs:
         project: src/SimpleView.xcodeproj
         # The action to perform (e.g. build, test, ...).
         action: build
+    - name: List files
+      run: file */*
+    - name: Create DMG
+      run: hdiutil create -volname SimpleView -srcfolder $(Build.SourcesDirectory)/output/build.sym/release/SimpleView.app -ov -format UDZO SimpleView.dmg
+    - name: Publish SimpleView artifacts to GitHub
+      uses: actions/upload-artifact@v1
+      with:
+        name: SimpleView
+        path: SimpleView.dmg
