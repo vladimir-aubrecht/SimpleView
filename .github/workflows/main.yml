@@ -27,14 +27,15 @@ jobs:
       with:
         project: src/SimpleView.xcodeproj
         scheme: SimpleView
-        action: build
+        action: clean build
+        configuration: Release
         destination: platform=macOS
     - name: List files
       run: ls -R *
     - name: Create DMG
-      run: hdiutil create -volname SimpleView -srcfolder Build/Products/Debug/SimpleView.app -ov -format UDZO Build/Products/Debug/SimpleView.dmg
+      run: hdiutil create -volname SimpleView -srcfolder Build/Products/Release/SimpleView.app -ov -format UDZO Build/Products/Release/SimpleView.dmg
     - name: Publish SimpleView artifacts to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: SimpleView
-        path: Build/Products/Debug/SimpleView.dmg
+        path: Build/Products/Release/SimpleView.dmg
