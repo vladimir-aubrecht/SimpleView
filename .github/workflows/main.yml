@@ -23,6 +23,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: XCode build
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
+      env:
+        CONFIGURATION_BUILD_DIR: $WORKSPACE/../Build
     - name: List files
       run: ls -R *
     - name: Create DMG
