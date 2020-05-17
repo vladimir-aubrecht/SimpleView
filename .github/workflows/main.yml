@@ -21,7 +21,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      lfs: true
+      with:
+        lfs: true
     
     - name: List checkout
       run: ls -Rl /Users/runner/runners/*/work/SimpleView/SimpleView/src/Sources/SimpleView/Media.xcassets/AppIcon.appiconset
