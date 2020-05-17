@@ -24,9 +24,6 @@ jobs:
       with:
         lfs: true
     
-    - name: List checkout
-      run: ls -Rl /Users/runner/runners/*/work/SimpleView/SimpleView/src/Sources/SimpleView/Media.xcassets/AppIcon.appiconset
-    
     - name: Setup Xcode version
       uses: maxim-lobanov/setup-xcode@1.0
       with:
