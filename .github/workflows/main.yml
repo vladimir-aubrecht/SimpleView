@@ -27,9 +27,6 @@ jobs:
       with:
         xcode-version: 11.4.1
     
-    - name: Show XCode version
-      run: /usr/bin/xcodebuild -version
-    
     - name: XCode build
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
     
