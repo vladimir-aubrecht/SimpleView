@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: List checkout
-      run: ls -R /Users/runner/runners/*/work/SimpleView/SimpleView
+      run: ls -Rl /Users/runner/runners/*/work/SimpleView/SimpleView/src/Sources/SimpleView/Media.xcassets/AppIcon.appiconset
     
     - name: Setup Xcode version
       uses: maxim-lobanov/setup-xcode@1.0
