@@ -21,6 +21,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      lfs: true
     
     - name: List checkout
       run: ls -Rl /Users/runner/runners/*/work/SimpleView/SimpleView/src/Sources/SimpleView/Media.xcassets/AppIcon.appiconset
@@ -32,9 +33,6 @@ jobs:
     
     - name: XCode build
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
-    
-    - name: List app
-      run: ls -R /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app
     
     - name: Copy Product
       run: cp -a /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app SimpleView.app
