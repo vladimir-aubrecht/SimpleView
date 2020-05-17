@@ -30,6 +30,9 @@ jobs:
     - name: XCode build
       run: xcodebuild -project src/SimpleView.xcodeproj -scheme SimpleView -configuration Release clean build
     
+    - name: List app
+      run: ls -R /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app
+    
     - name: Copy Product
       run: cp -a /Users/runner/Library/Developer/Xcode/DerivedData/SimpleView-*/Build/Products/Release/SimpleView.app SimpleView.app
     
