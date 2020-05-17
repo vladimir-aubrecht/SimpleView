@@ -22,6 +22,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
+    - name: List checkout
+      run: ls -R /Users/runner/runners/*/work/SimpleView/SimpleView
+    
     - name: Setup Xcode version
       uses: maxim-lobanov/setup-xcode@1.0
       with:
